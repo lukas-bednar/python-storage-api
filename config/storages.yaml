@@ -1,0 +1,9 @@
+---
+- server:
+    ip: x.y.z
+    provides:
+        - my_provider
+
+- provider:
+    name: my_provider
+    type: nfs

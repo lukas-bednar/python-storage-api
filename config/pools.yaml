@@ -1,0 +1,4 @@
+---
+- name: my-storage-pool
+  interfaces:
+    - my-storage

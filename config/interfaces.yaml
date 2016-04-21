@@ -1,0 +1,16 @@
+---
+- name: my-storage
+  providers:
+    - nfs3-posix:
+        executor:
+          ssh:
+            ip: 10.34.63.218
+            user: root
+            password: 123456
+        path: /nfs
+    - iscsi-tgt-posix:
+        executor:
+          local:
+            user: root
+            password: 123456
+        volume-group: vgstorage
